@@ -1,0 +1,92 @@
+/*GLOBAL*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 16px;
+}
+h1 {
+  color: aliceblue;
+}
+
+strong {
+  color: rgb(226, 43, 147);
+}
+
+small {
+  color: aliceblue;
+  margin: 1rem auto;
+
+  display: grid;
+  gap: 0,2rem;
+}
+
+.table {
+  background: linear-gradient(rgb(0, 0, 0), rgb(172, 172, 167));
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.container {
+  margin: 0 auto;
+  width: 40vw;
+ }
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  place-items: center;
+  gap: 0.5rem;
+  
+  background-color: rgb(255, 0, 247);
+  width: 40vw;
+  padding: 0.5rem;
+
+  border-radius: 0.625rem;
+  box-shadow: 0.875rem 0.875rem 0 0 #0004;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5rem;
+  height: 6rem;
+  background-color: aliceblue;
+  border-radius: 0.625rem;
+  box-shadow: 0.275rem 0.275rem 0 0 #0004;
+
+  cursor: pointer;
+  color: transparent;
+
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+  transition: transform 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  margin: 2rem auto;
+
+  display: grid;
+  grid-template-rows: auto;
+  gap: 0,5rem;
+
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  height: 5vh;
+
+  border-radius: 5px;
+  box-shadow: 0.275rem 0.275rem 0 0 #0004;
+}
+
+.open {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  transform: rotateY(0deg);
+}
